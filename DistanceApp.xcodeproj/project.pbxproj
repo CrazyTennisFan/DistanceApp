@@ -13,9 +13,12 @@
 		A0C9AE961EE5F19B00F6389B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C9AE941EE5F19B00F6389B /* Main.storyboard */; };
 		A0C9AE981EE5F19B00F6389B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C9AE971EE5F19B00F6389B /* Assets.xcassets */; };
 		A0C9AE9B1EE5F19B00F6389B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C9AE991EE5F19B00F6389B /* LaunchScreen.storyboard */; };
+		DF6CDF720FF16604138FCF6A /* libPods-DistanceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5F7527C734381AC3ADB6FF /* libPods-DistanceApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C5F7527C734381AC3ADB6FF /* libPods-DistanceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DistanceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D63D5A3D7AAD96F56371AFE /* Pods-DistanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DistanceApp/Pods-DistanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		A0C9AE881EE5F19B00F6389B /* DistanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C9AE8C1EE5F19B00F6389B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0C9AE8E1EE5F19B00F6389B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		A0C9AE971EE5F19B00F6389B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C9AE9A1EE5F19B00F6389B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C9AE9C1EE5F19B00F6389B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D025ABEF0DB234E2E3DFE4E9 /* Pods-DistanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistanceApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DistanceApp/Pods-DistanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6CDF720FF16604138FCF6A /* libPods-DistanceApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221C2DA991F9AFDB108CDF51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C5F7527C734381AC3ADB6FF /* libPods-DistanceApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		703165D6853AD1A2D1DFF4B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D025ABEF0DB234E2E3DFE4E9 /* Pods-DistanceApp.debug.xcconfig */,
+				7D63D5A3D7AAD96F56371AFE /* Pods-DistanceApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0C9AE7F1EE5F19B00F6389B = {
 			isa = PBXGroup;
 			children = (
 				A0C9AE8A1EE5F19B00F6389B /* DistanceApp */,
 				A0C9AE891EE5F19B00F6389B /* Products */,
+				703165D6853AD1A2D1DFF4B9 /* Pods */,
+				221C2DA991F9AFDB108CDF51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C9AE9F1EE5F19B00F6389B /* Build configuration list for PBXNativeTarget "DistanceApp" */;
 			buildPhases = (
+				F650B32DDFFD055FDAC459F1 /* [CP] Check Pods Manifest.lock */,
 				A0C9AE841EE5F19B00F6389B /* Sources */,
 				A0C9AE851EE5F19B00F6389B /* Frameworks */,
 				A0C9AE861EE5F19B00F6389B /* Resources */,
+				71896ECA72A5F8986B6B27FB /* [CP] Embed Pods Frameworks */,
+				0EA19F9B29435F8A55329CE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA19F9B29435F8A55329CE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DistanceApp/Pods-DistanceApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71896ECA72A5F8986B6B27FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DistanceApp/Pods-DistanceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F650B32DDFFD055FDAC459F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0C9AE841EE5F19B00F6389B /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		A0C9AEA01EE5F19B00F6389B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D025ABEF0DB234E2E3DFE4E9 /* Pods-DistanceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DistanceApp/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		A0C9AEA11EE5F19B00F6389B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D63D5A3D7AAD96F56371AFE /* Pods-DistanceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DistanceApp/Info.plist;
